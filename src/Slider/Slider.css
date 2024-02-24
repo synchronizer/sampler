@@ -1,0 +1,147 @@
+.slider {
+  width: calc(var(--col) * 4);
+  height: calc(var(--col) * 4 );
+    position: relative;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.slider__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: calc(var(--col) * 5);
+    cursor: pointer;
+    display: none;
+}
+
+
+.slider__knob {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  bottom: 20%;
+  right: 20%;
+  background-color: var(--grey3);
+  border-radius: 50%;
+  pointer-events: none;
+  background-size: contain;
+  z-index: -1;
+  box-shadow: var(--shadow)
+}
+
+.slider__mark{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  height: 5%;
+  width: 10%;
+  background-color: var(--grey5);
+}
+
+.slider__label {
+  text-align: center;
+  position: absolute;
+  bottom: -12%;
+  left: 0;
+  right: 0;
+}
+
+.slider__value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__label, .slider__value {
+  color: var(--grey5);
+}
+
+.slider__track-bg, .slider__track-scale {
+  fill: none;
+  stroke-width: 6;
+}
+
+.slider__track-bg {
+  stroke: var(--grey3);
+}
+
+.slider__track-scale {
+      stroke: var(--grey5);
+    }
+
+.slider__track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+transform: rotate(135deg);
+}
+
+
+
+
+
+.slider_disabled .slider__knob {
+  background-color: var(--grey2);
+}
+
+.slider_disabled .slider__mark {
+  visibility: hidden;
+}
+
+.slider_disabled .slider__label {
+  color: var(--grey4);
+}
+
+.slider_disabled .slider__value {
+  visibility: hidden;
+}
+
+.slider_disabled .slider__track-scale {
+  display: none;
+}
+
+.slider_disabled .slider__track-bg {
+  stroke: var(--grey2);
+}
+
+
+
+.slider_lighted .slider__mark {
+  background-color: var(--greyM)
+}
+
+.slider_lighted .slider__label, .slider_lighted .slider__value {
+  color: var(--greyM)
+}
+
+.slider_lighted .slider__track-scale {
+  stroke: var(--greyM);
+}
+
+
+
+.slider_selected .slider__knob {
+  background-color: var(--vivid4)
+}
+
+.slider_selected .slider__mark {
+  background-color: var(--vividM)
+}
+
+.slider_selected .slider__label, .slider_selected .slider__value {
+  color: var(--vividM)
+}
+
+.slider_selected .slider__track-scale {
+  stroke: var(--vividM);
+}
+
+.slider_selected .slider__track-bg {
+  stroke: var(--vivid4);
+}

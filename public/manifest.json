@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "api_version": 1,
+  "layout":
+   {
+   "logo": "http://localhost3000.ru/logoYaBro.png",
+   "color": "#45494D",
+   "show_title": false
+ },
+  "short_name": "Locahost 3000",
+  "name": "Locahost 3000",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#0b0b0b"
+}

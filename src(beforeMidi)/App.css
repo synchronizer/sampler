@@ -1,0 +1,47 @@
+:root {
+  --shadow: 0 0 0 #0000;
+
+  --col: 1.408450vw;
+
+  --black: #000;
+  --grey1: #0A0A0A;
+  --grey2: #141414;
+  --grey3: #1F1F1F;
+  --grey4: #333;
+  --grey5: #8C8C8C;
+  --greyM: #fff;
+  --vivid1: #00080A;
+  --vivid2: #000F14;
+  --vivid3: #00171F;
+  --vivid4: #002633;
+  --vivid5: #00698C;
+  --vividM: #00BFFF;
+
+  --border-radius: calc(var(--col) * .5);
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--grey1);
+  /* color: var(--color-white); */
+  overflow: hidden;
+  height: 100vh;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+  position: relative;
+  font-size: .95vmax;
+  line-height: 1.5vmax;
+  min-width: 0;
+  min-height: 0;
+}

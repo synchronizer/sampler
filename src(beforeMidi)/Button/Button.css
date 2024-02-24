@@ -1,0 +1,82 @@
+
+
+.button {
+  color: var(--greyM);
+  border-radius: var(--border-radius);
+  background-color: var(--grey3);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 0;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  padding: .4em calc(var(--col) * .5) calc(var(--col) * .5);
+  min-height: 0;
+}
+
+.button__label {
+  display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  max-height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.button_label-center {
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+
+
+
+
+
+.button_disabled {
+  background-color: var(--grey2);
+  color: var(--grey5);
+}
+
+.button_checked {
+  background-color: var(--vivid3);
+  color: var(--vividM);
+  box-shadow: inset 0 0 0 1px var(--vividM), var(--shadow), 0 0 calc(var(--col) * 3) calc(var(--col) * -2) var(--vividM)
+}
+
+.button_checked.button_disabled {
+  background-color: var(--vivid2);
+  color: var(--vivid5);
+  box-shadow: inset 0 0 0 1px var(--vivid5), var(--shadow), 0 0 calc(var(--col) * 3) calc(var(--col) * -2) var(--vivid5)
+}
+
+.button_lighted {
+  animation: .25s  infinite blink;
+}
+
+.button_lighted.button_checked {
+  animation: .25s  infinite blink-selected;
+}
+
+
+
+@keyframes blink {
+  0% {
+    background-color: var(--grey3);
+  }
+  50% {
+    background-color: var(--grey4);
+  }
+}
+
+@keyframes blink-selected {
+  0% {
+    background-color: var(--vivid3);
+  }
+  50% {
+    background-color: var(--vivid4);
+  }
+}
